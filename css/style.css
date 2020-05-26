@@ -62,12 +62,18 @@ header {
   font-weight: 500;
   font-size: 88px;
   color: #4d4d4d;
-  padding: 164px 0px 20px;
+  padding: 124px 0px 20px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
   .main-heading {
     font-size: 62px;
     padding: 124px 0px 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-heading {
+    font-size: 62px;
+    padding: 196px 0px 20px;
   }
 }
 
@@ -101,9 +107,9 @@ header {
   color: #4d4d4d;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
   .know-more-btn {
-    margin-bottom: 90px;
+    margin-bottom: 196px;
   }
 }
 
