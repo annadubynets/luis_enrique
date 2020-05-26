@@ -129,7 +129,7 @@ header {
 .about-section {
   padding: 109px 0px 125px;
   @include max-screen(768px) {
-    padding-top: 60px;
+    padding: 50px 0px 62px;
   }
 }
 
@@ -139,7 +139,7 @@ header {
   font-size: 46px;
   color: $black-primary-color;
   opacity: 0.8;
-  padding-top: 65px;
+  padding-top: 45px;
   &:before {
     content: "";
     display: block;
@@ -147,7 +147,7 @@ header {
     width: 60px;
     background-color: $black-primary-color;
     position: absolute;
-    top: 50px;
+    top: 15px;
   }
 }
 
@@ -162,21 +162,23 @@ header {
 
 .about-img {
   width: 100%;
-  @include max-screen(1024px) {
-    position: relative;
-    top: 80px;
-  }
 }
 
 .download-btn {
   &:hover {
     border: 1px solid $black-primary-color;
   }
+  @include max-screen(768px) {
+    margin-bottom: 30px;
+  }
 }
 
 .services-section {
   background-color: $gray-light-color;
   padding: 119px 0px 37px;
+  @include max-screen(768px) {
+    padding-bottom: 0;
+  }
 }
 
 .services-heading {
@@ -212,7 +214,7 @@ header {
 .skills-section {
   padding: 118px 0px 125px;
   @include max-screen(768px) {
-    padding: 56px 0px 62px;
+    padding: 80px 0px 62px;
   }
 }
 
@@ -224,7 +226,7 @@ header {
   background-color: #f6f6f6;
   padding: 124px 0px;
   @include max-screen(768px) {
-    padding-bottom: 80px;
+    padding: 90px 0px 60px;
   }
 }
 
@@ -249,6 +251,9 @@ header {
 
 .testimonials-section {
   padding: 125px 0px 120px;
+  @include max-screen(768px) {
+    padding: 80px 0px 80px;
+  }
 }
 
 .user-heading {
@@ -315,6 +320,9 @@ footer {
   .form-group {
     margin-bottom: 30px;
   }
+  @include max-screen(768px) {
+    padding-top: 100px;
+  }
 }
 
 .contact-heading {
@@ -344,6 +352,9 @@ footer {
   background-color: #f6f6f6;
   padding: 75px 0px 30px;
   margin-top: 120px;
+  @include max-screen(768px) {
+    margin-top: 60px;
+  }
 }
 
 .review-desc {
@@ -396,6 +407,11 @@ footer {
     background-color: transparent;
     border-color: $black-primary-color;
   }
+}
+
+.send-icon {
+  position: relative;
+  top: -2px;
 }
 
 .copyright-desc {

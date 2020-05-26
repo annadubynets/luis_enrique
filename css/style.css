@@ -125,7 +125,7 @@ header {
 }
 @media screen and (max-width: 768px) {
   .about-section {
-    padding-top: 60px;
+    padding: 50px 0px 62px;
   }
 }
 
@@ -135,7 +135,7 @@ header {
   font-size: 46px;
   color: #4d4d4d;
   opacity: 0.8;
-  padding-top: 65px;
+  padding-top: 45px;
 }
 .about-heading:before, .services-heading:before, .contact-heading:before {
   content: "";
@@ -144,7 +144,7 @@ header {
   width: 60px;
   background-color: #4d4d4d;
   position: absolute;
-  top: 50px;
+  top: 15px;
 }
 
 .about-desc {
@@ -159,20 +159,24 @@ header {
 .about-img {
   width: 100%;
 }
-@media screen and (max-width: 1024px) {
-  .about-img {
-    position: relative;
-    top: 80px;
-  }
-}
 
 .download-btn:hover {
   border: 1px solid #4d4d4d;
+}
+@media screen and (max-width: 768px) {
+  .download-btn {
+    margin-bottom: 30px;
+  }
 }
 
 .services-section {
   background-color: #f6f6f6;
   padding: 119px 0px 37px;
+}
+@media screen and (max-width: 768px) {
+  .services-section {
+    padding-bottom: 0;
+  }
 }
 
 .services-heading, .contact-heading {
@@ -209,7 +213,7 @@ header {
 }
 @media screen and (max-width: 768px) {
   .skills-section {
-    padding: 56px 0px 62px;
+    padding: 80px 0px 62px;
   }
 }
 
@@ -223,7 +227,7 @@ header {
 }
 @media screen and (max-width: 768px) {
   .portfolio-section {
-    padding-bottom: 80px;
+    padding: 90px 0px 60px;
   }
 }
 
@@ -248,6 +252,11 @@ header {
 
 .testimonials-section {
   padding: 125px 0px 120px;
+}
+@media screen and (max-width: 768px) {
+  .testimonials-section {
+    padding: 80px 0px 80px;
+  }
 }
 
 .user-heading {
@@ -317,6 +326,11 @@ footer {
 footer .form-group {
   margin-bottom: 30px;
 }
+@media screen and (max-width: 768px) {
+  footer {
+    padding-top: 100px;
+  }
+}
 
 .contact-heading {
   color: #ffffff;
@@ -346,6 +360,11 @@ footer .form-group {
   background-color: #f6f6f6;
   padding: 75px 0px 30px;
   margin-top: 120px;
+}
+@media screen and (max-width: 768px) {
+  .review-items {
+    margin-top: 60px;
+  }
 }
 
 .review-desc {
@@ -398,6 +417,11 @@ footer .form-group {
 .send-btn:hover {
   background-color: transparent;
   border-color: #4d4d4d;
+}
+
+.send-icon {
+  position: relative;
+  top: -2px;
 }
 
 .copyright-desc {
