@@ -22,9 +22,19 @@ $(document).ready(function(){
     } );
 });
 
-$(function() {
-    $('.go-to-bottom').click (function() {
-        $('html, body').animate({scrollTop: $('header').offset().top }, 'slow');
+$(document).ready(function(){
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+            $('.go-to-bottom').fadeIn();
+        } else {
+            $('.go-to-bottom').fadeOut();
+        }
+    });
+    // scroll body to 0px on click
+    $('.go-to-bottom').click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 400);
         return false;
     });
 });

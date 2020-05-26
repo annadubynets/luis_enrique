@@ -37,6 +37,12 @@ header {
   color: $black-primary-color;
   text-transform: uppercase;
   position: relative;
+  margin: 30px 20px;
+  padding: 0;
+  display: inline-block;
+  @include max-screen(768px) {
+    margin: 15px 0px;
+  }
   &:hover {
     color: #95999c;
   }
@@ -49,17 +55,17 @@ header {
     transition: 0.5s;
     position: absolute;
     bottom: -9px;
+    @include max-screen(768px) {
+      display: none;
+    }
   }
   &:hover:after {
     width: 100%;
   }
 }
 
-.navbar-light .navbar-nav .nav-link {
-  margin: 10px 20px;
-  padding: 0;
-  display: inline-block;
-
+.navbar-brand {
+  padding-top: 1.3125rem;
 }
 
 .main-heading {
@@ -94,7 +100,6 @@ header {
   color: $black-primary-color;
   background-color: transparent;
   border: 1px solid $black-primary-color;
-  width: 160px;
   text-transform: uppercase;
   padding: 19px 0px;
   margin-right: 20px;
@@ -103,8 +108,11 @@ header {
     border-color: $primary-color;
     color: $black-primary-color;
   }
+}
+
+.know-more-btn {
   @include max-screen(1200px) {
-    margin-bottom: 85px;
+    margin-bottom: 90px;
   }
 }
 
@@ -125,7 +133,7 @@ header {
   font-size: 46px;
   color: $black-primary-color;
   opacity: 0.8;
-  padding-top: 68px;
+  padding-top: 65px;
   &:before {
     content: "";
     display: block;
@@ -148,10 +156,13 @@ header {
 
 .about-img {
   width: 100%;
+  @include max-screen(1024px) {
+    position: relative;
+    top: 80px;
+  }
 }
 
 .download-btn {
-  width: 244px;
   &:hover {
     border: 1px solid $black-primary-color;
   }
@@ -196,6 +207,10 @@ header {
   padding: 118px 0px 125px;
 }
 
+.skills-img {
+  width: 100%;
+}
+
 .portfolio-section {
   background-color: #f6f6f6;
   padding: 124px 0px;
@@ -216,6 +231,7 @@ header {
 .load-more-btn {
   @include max-screen(768px) {
     margin-top: 30px;
+    margin-bottom: 0px;
   }
 }
 
@@ -228,6 +244,9 @@ header {
   font-weight: 500;
   font-size: 30px;
   color: $black-dark-color;
+  @include max-screen(768px) {
+    margin-top: 30px;
+  }
 }
 
 .user-position-desc {
@@ -265,6 +284,7 @@ header {
   margin: 0 4px;
   margin-top: 57px;
 }
+
 .owl-dots {
   text-align: center;
 }
@@ -357,6 +377,11 @@ footer {
 
 .send-btn {
   margin: 15px 0px 90px;
+  background-color: $primary-color;
+  &:hover {
+    background-color: transparent;
+    border-color: $black-primary-color;
+  }
 }
 
 .copyright-desc {
@@ -383,8 +408,8 @@ footer {
     bottom: 240px;
     right: 30px;
     @include max-screen(768px) {
-      position: absolute;
-      bottom: 170px;
+      position: fixed;
+      bottom: 30px;
     }
   }
 }
@@ -396,14 +421,19 @@ footer {
   }
 }
 
+.social-img {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  color: $black-primary-color;
+  background-color: $primary-color;
+  line-height: 27px;
+  font-size: 15px;
+  text-align: center;
+}
+
 .facebook-icon {
-    width: 27px;
-    height: 27px;
-    color: $black-primary-color;
-    background-color: $primary-color;
-    line-height: 27px;
-    font-size: 15px;
-    text-align: center;
+    @extend .social-img;
     &:hover {
       color: $primary-color;
       background-color: #3b5997;
@@ -411,43 +441,23 @@ footer {
 }
 
 .twitter-icon {
-  width: 27px;
-  height: 27px;
-  color: $black-primary-color;
-  background-color: $primary-color;
-  line-height: 27px;
-  font-size: 15px;
-  text-align: center;
+  @extend .social-img;
   &:hover {
     color: $primary-color;
     background-color: #3ec2f3;
   }
 }
 
-
 .instagram-icon {
-  width: 27px;
-  height: 27px;
-  color: $black-primary-color;
-  background-color: $primary-color;
-  line-height: 27px;
-  font-size: 15px;
-  text-align: center;
+  @extend .social-img;
   &:hover {
     color: $primary-color;
     background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-
   }
 }
 
 .google-icon {
-  width: 27px;
-  height: 27px;
-  color: $black-primary-color;
-  background-color: $primary-color;
-  line-height: 27px;
-  font-size: 15px;
-  text-align: center;
+  @extend .social-img;
   &:hover {
     color: $primary-color;
     background-color: #e44c41;
@@ -455,13 +465,7 @@ footer {
 }
 
 .behance-icon {
-  width: 27px;
-  height: 27px;
-  color: $black-primary-color;
-  background-color: $primary-color;
-  line-height: 27px;
-  font-size: 15px;
-  text-align: center;
+  @extend .social-img;
   &:hover {
     color: $primary-color;
     background-color: #1d55f7;
@@ -469,21 +473,11 @@ footer {
 }
 
 .dribbble-icon {
-  width: 27px;
-  height: 27px;
-  color: $black-primary-color;
-  background-color: $primary-color;
-  line-height: 27px;
-  font-size: 15px;
-  text-align: center;
+  @extend .social-img;
   &:hover {
     color: #ab0e72;
     background-color: #ea4c89;
   }
-}
-
-.social-img {
-  display: inline-block;
 }
 
 

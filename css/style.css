@@ -22,6 +22,14 @@ header {
   color: #4d4d4d;
   text-transform: uppercase;
   position: relative;
+  margin: 30px 20px;
+  padding: 0;
+  display: inline-block;
+}
+@media screen and (max-width: 768px) {
+  .navbar-light .navbar-nav .nav-link {
+    margin: 15px 0px;
+  }
 }
 .navbar-light .navbar-nav .nav-link:hover {
   color: #95999c;
@@ -36,14 +44,17 @@ header {
   position: absolute;
   bottom: -9px;
 }
+@media screen and (max-width: 768px) {
+  .navbar-light .navbar-nav .nav-link:after {
+    display: none;
+  }
+}
 .navbar-light .navbar-nav .nav-link:hover:after {
   width: 100%;
 }
 
-.navbar-light .navbar-nav .nav-link {
-  margin: 10px 20px;
-  padding: 0;
-  display: inline-block;
+.navbar-brand {
+  padding-top: 1.3125rem;
 }
 
 .main-heading {
@@ -80,7 +91,6 @@ header {
   color: #4d4d4d;
   background-color: transparent;
   border: 1px solid #4d4d4d;
-  width: 160px;
   text-transform: uppercase;
   padding: 19px 0px;
   margin-right: 20px;
@@ -90,9 +100,10 @@ header {
   border-color: #ffffff;
   color: #4d4d4d;
 }
+
 @media screen and (max-width: 1200px) {
-  .btn-primary {
-    margin-bottom: 85px;
+  .know-more-btn {
+    margin-bottom: 90px;
   }
 }
 
@@ -115,7 +126,7 @@ header {
   font-size: 46px;
   color: #4d4d4d;
   opacity: 0.8;
-  padding-top: 68px;
+  padding-top: 65px;
 }
 .about-heading:before, .services-heading:before, .contact-heading:before {
   content: "";
@@ -139,10 +150,13 @@ header {
 .about-img {
   width: 100%;
 }
-
-.download-btn {
-  width: 244px;
+@media screen and (max-width: 1024px) {
+  .about-img {
+    position: relative;
+    top: 80px;
+  }
 }
+
 .download-btn:hover {
   border: 1px solid #4d4d4d;
 }
@@ -185,6 +199,10 @@ header {
   padding: 118px 0px 125px;
 }
 
+.skills-img {
+  width: 100%;
+}
+
 .portfolio-section {
   background-color: #f6f6f6;
   padding: 124px 0px;
@@ -205,6 +223,7 @@ header {
 @media screen and (max-width: 768px) {
   .load-more-btn {
     margin-top: 30px;
+    margin-bottom: 0px;
   }
 }
 
@@ -217,6 +236,11 @@ header {
   font-weight: 500;
   font-size: 30px;
   color: #212121;
+}
+@media screen and (max-width: 768px) {
+  .user-heading {
+    margin-top: 30px;
+  }
 }
 
 .user-position-desc {
@@ -348,6 +372,11 @@ footer .form-group {
 
 .send-btn {
   margin: 15px 0px 90px;
+  background-color: #ffffff;
+}
+.send-btn:hover {
+  background-color: transparent;
+  border-color: #4d4d4d;
 }
 
 .copyright-desc {
@@ -375,8 +404,8 @@ footer .form-group {
 }
 @media screen and (max-width: 768px) {
   .go-to-bottom:after {
-    position: absolute;
-    bottom: 170px;
+    position: fixed;
+    bottom: 30px;
   }
 }
 
@@ -387,7 +416,8 @@ footer .form-group {
   }
 }
 
-.facebook-icon {
+.social-img, .dribbble-icon, .behance-icon, .google-icon, .instagram-icon, .twitter-icon, .facebook-icon {
+  display: inline-block;
   width: 27px;
   height: 27px;
   color: #4d4d4d;
@@ -396,83 +426,35 @@ footer .form-group {
   font-size: 15px;
   text-align: center;
 }
+
 .facebook-icon:hover {
   color: #ffffff;
   background-color: #3b5997;
 }
 
-.twitter-icon {
-  width: 27px;
-  height: 27px;
-  color: #4d4d4d;
-  background-color: #ffffff;
-  line-height: 27px;
-  font-size: 15px;
-  text-align: center;
-}
 .twitter-icon:hover {
   color: #ffffff;
   background-color: #3ec2f3;
 }
 
-.instagram-icon {
-  width: 27px;
-  height: 27px;
-  color: #4d4d4d;
-  background-color: #ffffff;
-  line-height: 27px;
-  font-size: 15px;
-  text-align: center;
-}
 .instagram-icon:hover {
   color: #ffffff;
   background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 }
 
-.google-icon {
-  width: 27px;
-  height: 27px;
-  color: #4d4d4d;
-  background-color: #ffffff;
-  line-height: 27px;
-  font-size: 15px;
-  text-align: center;
-}
 .google-icon:hover {
   color: #ffffff;
   background-color: #e44c41;
 }
 
-.behance-icon {
-  width: 27px;
-  height: 27px;
-  color: #4d4d4d;
-  background-color: #ffffff;
-  line-height: 27px;
-  font-size: 15px;
-  text-align: center;
-}
 .behance-icon:hover {
   color: #ffffff;
   background-color: #1d55f7;
 }
 
-.dribbble-icon {
-  width: 27px;
-  height: 27px;
-  color: #4d4d4d;
-  background-color: #ffffff;
-  line-height: 27px;
-  font-size: 15px;
-  text-align: center;
-}
 .dribbble-icon:hover {
   color: #ab0e72;
   background-color: #ea4c89;
-}
-
-.social-img {
-  display: inline-block;
 }
 
 /*# sourceMappingURL=style.css.map */
