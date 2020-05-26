@@ -77,6 +77,12 @@ header {
   @include max-screen(1024px) {
     font-size: 62px;
   }
+  @include max-screen(768px) {
+    padding: 30px 0px 20px;
+  }
+  @include max-screen(320px) {
+    font-size: 54px;
+  }
 }
 
 .main-desc {
@@ -111,19 +117,20 @@ header {
 
 .know-more-btn {
   @include max-screen(768px) {
-    margin-bottom: 124px;
+    margin-bottom: 62px;
   }
 }
 
 .img-face {
   width: 100%;
-  @include max-screen(992px) {
-    display: none;
-  }
+
 }
 
 .about-section {
   padding: 109px 0px 125px;
+  @include max-screen(768px) {
+    padding-top: 60px;
+  }
 }
 
 .about-heading {
@@ -204,6 +211,9 @@ header {
 
 .skills-section {
   padding: 118px 0px 125px;
+  @include max-screen(768px) {
+    padding: 56px 0px 62px;
+  }
 }
 
 .skills-img {
@@ -213,6 +223,9 @@ header {
 .portfolio-section {
   background-color: #f6f6f6;
   padding: 124px 0px;
+  @include max-screen(768px) {
+    padding-bottom: 80px;
+  }
 }
 
 .project-img {

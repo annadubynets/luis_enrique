@@ -69,6 +69,16 @@ header {
     font-size: 62px;
   }
 }
+@media screen and (max-width: 768px) {
+  .main-heading {
+    padding: 30px 0px 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .main-heading {
+    font-size: 54px;
+  }
+}
 
 .main-desc {
   font-family: "Asap", sans-serif;
@@ -102,21 +112,21 @@ header {
 
 @media screen and (max-width: 768px) {
   .know-more-btn {
-    margin-bottom: 124px;
+    margin-bottom: 62px;
   }
 }
 
 .img-face {
   width: 100%;
 }
-@media screen and (max-width: 992px) {
-  .img-face {
-    display: none;
-  }
-}
 
 .about-section {
   padding: 109px 0px 125px;
+}
+@media screen and (max-width: 768px) {
+  .about-section {
+    padding-top: 60px;
+  }
 }
 
 .about-heading, .services-heading, .contact-heading {
@@ -197,6 +207,11 @@ header {
 .skills-section {
   padding: 118px 0px 125px;
 }
+@media screen and (max-width: 768px) {
+  .skills-section {
+    padding: 56px 0px 62px;
+  }
+}
 
 .skills-img {
   width: 100%;
@@ -205,6 +220,11 @@ header {
 .portfolio-section {
   background-color: #f6f6f6;
   padding: 124px 0px;
+}
+@media screen and (max-width: 768px) {
+  .portfolio-section {
+    padding-bottom: 80px;
+  }
 }
 
 .project-img {
