@@ -319,9 +319,11 @@ footer {
     background-color: $primary-color;
     position: absolute;
     bottom: -405px;
+    left: 0;
     @include max-screen(768px) {
       position: absolute;
       bottom: -480px;
+      left: 0;
     }
   }
 }

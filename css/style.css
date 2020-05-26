@@ -313,11 +313,13 @@ footer .form-group {
   background-color: #ffffff;
   position: absolute;
   bottom: -405px;
+  left: 0;
 }
 @media screen and (max-width: 768px) {
   .contact-heading:after {
     position: absolute;
     bottom: -480px;
+    left: 0;
   }
 }
 
