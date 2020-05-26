@@ -88,6 +88,11 @@ header {
   opacity: 0.5;
   padding-bottom: 30px;
 }
+@media screen and (max-width: 576px) {
+  .main-desc {
+    font-size: 19px;
+  }
+}
 
 .btn {
   border-radius: 0;
@@ -125,7 +130,7 @@ header {
 }
 @media screen and (max-width: 768px) {
   .about-section {
-    padding: 50px 0px 62px;
+    padding: 50px 0px 60px;
   }
 }
 
@@ -136,6 +141,7 @@ header {
   color: #4d4d4d;
   opacity: 0.8;
   padding-top: 45px;
+  position: relative;
 }
 .about-heading:before, .services-heading:before, .contact-heading:before {
   content: "";
@@ -144,7 +150,7 @@ header {
   width: 60px;
   background-color: #4d4d4d;
   position: absolute;
-  top: 15px;
+  top: 18px;
 }
 
 .about-desc {
@@ -175,6 +181,7 @@ header {
 }
 @media screen and (max-width: 768px) {
   .services-section {
+    padding-top: 80px;
     padding-bottom: 0;
   }
 }
@@ -213,7 +220,7 @@ header {
 }
 @media screen and (max-width: 768px) {
   .skills-section {
-    padding: 80px 0px 62px;
+    padding: 80px 0px 60px;
   }
 }
 
@@ -227,7 +234,7 @@ header {
 }
 @media screen and (max-width: 768px) {
   .portfolio-section {
-    padding: 90px 0px 60px;
+    padding: 80px 0px 60px;
   }
 }
 
@@ -255,7 +262,7 @@ header {
 }
 @media screen and (max-width: 768px) {
   .testimonials-section {
-    padding: 80px 0px 80px;
+    padding: 80px 0px 60px;
   }
 }
 
@@ -328,7 +335,7 @@ footer .form-group {
 }
 @media screen and (max-width: 768px) {
   footer {
-    padding-top: 100px;
+    padding-top: 80px;
   }
 }
 

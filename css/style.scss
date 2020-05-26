@@ -92,6 +92,9 @@ header {
   color: $black-primary-color;
   opacity: 0.5;
   padding-bottom: 30px;
+  @include max-screen(576px) {
+    font-size: 19px;
+  }
 }
 
 .btn {
@@ -129,7 +132,7 @@ header {
 .about-section {
   padding: 109px 0px 125px;
   @include max-screen(768px) {
-    padding: 50px 0px 62px;
+    padding: 50px 0px 60px;
   }
 }
 
@@ -140,6 +143,7 @@ header {
   color: $black-primary-color;
   opacity: 0.8;
   padding-top: 45px;
+  position: relative;
   &:before {
     content: "";
     display: block;
@@ -147,7 +151,7 @@ header {
     width: 60px;
     background-color: $black-primary-color;
     position: absolute;
-    top: 15px;
+    top: 18px;
   }
 }
 
@@ -177,6 +181,7 @@ header {
   background-color: $gray-light-color;
   padding: 119px 0px 37px;
   @include max-screen(768px) {
+    padding-top: 80px;
     padding-bottom: 0;
   }
 }
@@ -214,7 +219,7 @@ header {
 .skills-section {
   padding: 118px 0px 125px;
   @include max-screen(768px) {
-    padding: 80px 0px 62px;
+    padding: 80px 0px 60px;
   }
 }
 
@@ -226,7 +231,7 @@ header {
   background-color: #f6f6f6;
   padding: 124px 0px;
   @include max-screen(768px) {
-    padding: 90px 0px 60px;
+    padding: 80px 0px 60px;
   }
 }
 
@@ -252,7 +257,7 @@ header {
 .testimonials-section {
   padding: 125px 0px 120px;
   @include max-screen(768px) {
-    padding: 80px 0px 80px;
+    padding: 80px 0px 60px;
   }
 }
 
@@ -321,7 +326,7 @@ footer {
     margin-bottom: 30px;
   }
   @include max-screen(768px) {
-    padding-top: 100px;
+    padding-top: 80px;
   }
 }
 
@@ -341,6 +346,7 @@ footer {
     bottom: -405px;
     left: 0;
     @include max-screen(768px) {
+      
       position: absolute;
       bottom: -480px;
       left: 0;
