@@ -67,13 +67,6 @@ header {
 @media screen and (max-width: 1024px) {
   .main-heading {
     font-size: 62px;
-    padding: 124px 0px 20px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .main-heading {
-    font-size: 62px;
-    padding: 196px 0px 20px;
   }
 }
 
@@ -109,7 +102,7 @@ header {
 
 @media screen and (max-width: 768px) {
   .know-more-btn {
-    margin-bottom: 196px;
+    margin-bottom: 124px;
   }
 }
 

@@ -76,11 +76,6 @@ header {
   padding: 124px 0px 20px;
   @include max-screen(1024px) {
     font-size: 62px;
-    padding: 124px 0px 20px;
-  }
-  @include max-screen(768px) {
-    font-size: 62px;
-    padding: 196px 0px 20px;
   }
 }
 
@@ -116,7 +111,7 @@ header {
 
 .know-more-btn {
   @include max-screen(768px) {
-    margin-bottom: 196px;
+    margin-bottom: 124px;
   }
 }
 
