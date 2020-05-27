@@ -423,8 +423,7 @@ footer .form-group {
   background-color: #ffffff;
 }
 .send-btn:hover {
-  background-color: transparent;
-  border-color: #4d4d4d;
+  border-color: #f6f6f6;
 }
 
 .send-icon {
