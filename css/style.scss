@@ -171,6 +171,7 @@ header {
 .download-btn {
   &:hover {
     border: 1px solid $black-primary-color;
+    background-color: $gray-light-color
   }
   @include max-screen(768px) {
     margin-bottom: 30px;
@@ -346,7 +347,7 @@ footer {
     bottom: -405px;
     left: 0;
     @include max-screen(768px) {
-      
+
       position: absolute;
       bottom: -480px;
       left: 0;
