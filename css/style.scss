@@ -119,7 +119,7 @@ header {
 }
 
 .know-more-btn {
-  @include max-screen(768px) {
+  @include max-screen(992px) {
     margin-bottom: 62px;
   }
 }
@@ -173,7 +173,7 @@ header {
     border: 1px solid $black-primary-color;
     background-color: $gray-light-color
   }
-  @include max-screen(768px) {
+  @include max-screen(992px) {
     margin-bottom: 30px;
   }
 }
@@ -267,7 +267,7 @@ header {
   font-weight: 500;
   font-size: 30px;
   color: $black-dark-color;
-  @include max-screen(768px) {
+  @include max-screen(992px) {
     margin-top: 30px;
   }
 }
@@ -346,8 +346,7 @@ footer {
     position: absolute;
     bottom: -405px;
     left: 0;
-    @include max-screen(768px) {
-
+    @include max-screen(992px) {
       position: absolute;
       bottom: -480px;
       left: 0;
@@ -441,7 +440,7 @@ footer {
     font-size: 9px;
     color: $black-primary-color;
     position: absolute;
-    bottom: 240px;
+    bottom: 220px;
     right: 30px;
     @include max-screen(768px) {
       position: fixed;
