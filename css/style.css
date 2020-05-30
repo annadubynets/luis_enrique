@@ -301,9 +301,13 @@ header {
   width: 100%;
 }
 
-.owl-carousel {
+.card {
   border: 1px solid #212121;
-  padding: 80px 0px 38px;
+  border-radius: 0;
+}
+
+.card-body {
+  padding: 80px 0px 35px;
 }
 
 .owl-dots .owl-dot span {
